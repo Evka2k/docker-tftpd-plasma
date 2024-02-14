@@ -1,0 +1,12 @@
+services:
+  tftpd:
+    image: tftpd-plasma
+    build: ./
+    container_name: tftpd-plasma
+    environment:
+      - PUID=1111
+      - PGID=1112
+    ports:
+      - 69:69/udp
+    restart: unless-stopped
+
