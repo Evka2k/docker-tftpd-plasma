@@ -9,8 +9,8 @@ services:
     ports:
       - 69:69/udp
     restart: unless-stopped
-    volumes:
-      - tftpd_plasma_custom:/tftpboot/plasma_boot/custom
+#    volumes:
+#      - tftpd_plasma_custom:/tftpboot/plasma_boot/custom
 
-volumes:
-  tftpd_plasma_custom: {}
+#volumes:
+#  tftpd_plasma_custom: {}
